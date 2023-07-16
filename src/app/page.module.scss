@@ -1,0 +1,380 @@
+.main {
+  // min-height: 100vh;
+  
+}
+
+.description {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.nav {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 5vw;
+  margin: 0 5vw;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  button,
+  .navItem {
+    flex-grow: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .navItem {
+    background-color: transparent;
+    border: 0;
+
+  }
+
+  .navButton {
+    border-radius: 8px;
+    border: 1px solid #0047CC;
+    background: #0047CC;
+    padding: 10px 18px;
+  }
+}
+
+.heroSection {
+  padding: 40px 5vw;
+  width: 71vw;
+  max-width: 1214px;
+  margin: 0 5vw;
+
+  #heroH1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 81px;
+    letter-spacing: 0.8px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+      .h1Color {
+        color: #E182B5;
+        font-style: italic;
+      }
+  }
+
+  hr {
+    margin-bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.16);
+    height: 1px;
+    border: none;
+  }
+
+  p {
+    color: #D0D8E7;
+    font-size: 22px;
+    font-style: normal;
+    // font-weight: 400;
+    line-height: 28px;
+  }
+
+  .formGroup {
+    margin-top: 35px;
+    margin-bottom: 80px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 6px;
+
+    input {
+      border: none;
+      padding: 14px;
+      margin: 10px;
+      background: rgba(255, 255, 255, 0);
+      font-size: 16px;
+      min-width: 260px;
+      color: #fff;
+    }
+    input::placeholder,
+    input::-ms-input-placeholder  {
+      color: #da1111;
+    }
+
+    button {
+      border-radius: 8px;
+      background: #0047CC;
+      padding: 0px 12px;
+      margin: 6px 9px;
+    }
+  }
+}
+
+
+.fadeIn {
+  animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+.box {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: black;
+}
+
+.box .framewrapper {
+  border: 0px none;
+  height: 437px;
+  position: relative;
+  width: 1512px;
+}
+
+.box .frame {
+  background-color: #f5f8ff;
+  height: 437px;
+  left: 0;
+  top: 0;
+  width: 1512px;
+}
+
+.box .group {
+  height: 314px;
+  left: 82px;
+  position: absolute;
+  top: 60px;
+  width: 1401px;
+}
+
+.box .overlap {
+  height: 314px;
+  position: relative;
+}
+
+.box .div {
+  align-items: flex-start;
+  display: flex;
+  gap: 17px;
+  left: 23px;
+  position: absolute;
+  top: 18px;
+  width: fit-content;
+}
+
+.box .frame2 {
+  height: 125px;
+  min-width: 428px;
+  position: relative;
+}
+
+.box .machinelearning {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: 56px;
+}
+
+.box .frame3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 86px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.box .textwrapper {
+  color: var(--textprimary-dark);
+  font-family: "SF Pro Display-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.box .p {
+  color: var(--textprimary-dark);
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 276px;
+}
+
+.box .frame4 {
+  height: 125px;
+  min-width: 458px;
+  position: relative;
+}
+
+.box .frame5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 91px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.box .stockearnings {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  width: 56px;
+}
+
+.box .cloudservices {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 56px;
+}
+
+.box .frame6 {
+  align-items: flex-start;
+  display: flex;
+  gap: 17px;
+  left: 23px;
+  position: absolute;
+  top: 189px;
+  width: fit-content;
+}
+
+.box .textwrapper-2 {
+  color: var(--textprimary-dark);
+  font-family: "SF Pro Display-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.box .img {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 56px;
+}
+
+.box .textwrapper-3 {
+  color: var(--textprimary-dark);
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 277px;
+}
+
+.box .frame7 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 93px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.box .smartpackkernel {
+  height: 56px;
+  left: -2px;
+  position: absolute;
+  top: 0;
+  width: 56px;
+}
+
+.box .overlapgroup-wrapper {
+  height: 303px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1334px;
+}
+
+.box .overlapgroup {
+  height: 303px;
+  position: relative;
+}
+
+.box .line {
+  height: 303px;
+  left: 432px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.box .line2 {
+  height: 303px;
+  left: 894px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.box .line3 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 167px;
+  width: 1334px;
+}
+
+.box .line4 {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1512px;
+}
+
+.box .line5 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 436px;
+  width: 1512px;
+}
