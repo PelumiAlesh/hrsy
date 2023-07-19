@@ -109,16 +109,14 @@ export default function Home() {
     <main className={`${styles.main}`}>
       <div style={{
         backgroundImage: `url(${backgroundImage})`,
-        minHeight: '100vh',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
-      }}>
+      }} className={styles.intro}>
         <nav className={styles.nav}>
           <Image
             src={logo}
             alt="GFG logo served with static path of public directory"
-            height="80"
-            width="142"
+
           />
           <div>
             <button className={styles.navItem}>About us</button>
@@ -137,98 +135,75 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.box}>
-        <div className={styles.framewrapper}>
-          <div className={styles.frame}>
-            <div className={styles.group}>
-              <div className={styles.overlap}>
-                <div className={styles.div}>
-                  <div className={styles.frame2}>
-                 
-                    <Image
-                      src={MLE}
-                    />
-                    <div className={styles.frame3}>
-                      <div className={styles.textwrapper}>Machine learning enabled</div>
-                      <p className={styles.p}>
-                        We have harnessed ML, predictive analytics, generative AI to enable you transition from reactive
-                        maintenance to a proactive and datadriven approach.
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.frame4}>
-                    <Image src={ROI} />
-                    <div className={styles.frame5}>
-                      <div className={styles.textwrapper}>Increased ROI</div>
-                      <p className={styles.p}>
-                        Identify problematic assets sooner and make better repair versus replace decisions, all while
-                        reducing operations waste.
-                      </p>
-                    </div>
-                    {/* <img className={styles.stockearnings} alt="Stock earnings" src="stockearningssvgrepocom1.svg" /> */}
-                  </div>
-                  <div className={styles.frame2}>
-                    <Image src={Pricing} />
-                    <div className={styles.frame5}>
-                      <div className={styles.textwrapper}>Flexible Pricing</div>
-                      <p className={styles.p}>
-                        Scale up your as your business needs evolve. You have full entitlement to the suite with the
-                        flexibility to chose and control your license capacity
-                      </p>
-                    </div>
-                    {/* <img className={styles.cloudservices} alt="Cloud services" src="cloudservicespricingsvgrepocom1.svg" /> */}
-                  </div>
-                </div>
-                <div className={styles.frame6}>
-                  <div className={styles.frame2}>
-                    <Image src={SOC} />
-                    <div className={styles.frame3}>
-                      <p className={styles.textwrapper2}>SOC 2 Type 2 compliance</p>
-                      <p className={styles.p}>
-                        Your data are secured with world class security measures so we can prevent your data from going
-                        missing or falling into the wrong hands.
-                      </p>
-                    </div>
-                    {/* <img className={styles.img} alt="Security svgrepo com" src="securitysvgrepocom1.svg" /> */}
-                  </div>
-                  <div className={styles.frame4}>
-                    <Image src={OptRes} />
-                    <div className={styles.frame5}>
-                      <div className={styles.textwrapper}>Optimize resources</div>
-                      <p className={styles.p}>
-                        Focus on the work that matters most and notify technicians of priority changes and new work orders
-                        so your team can be agile and more effective.
-                      </p>
-                    </div>
-                    {/* <img className={styles.img} alt="Browser seo and web" src="browserseoandwebsvgrepocom1.svg" /> */}
-                  </div>
-                  <div className={styles.frame4}>
-                    <Image src={man_asset} />
-                    <div className={styles.frame7}>
-                      <div className={styles.textwrapper}>Manage and maintain assets</div>
-                      <p className={styles.p}>
-                        Track all assets across your protfolio in one centralized place no matter where they are. Get
-                        better visibility through out your organisation .
-                      </p>
-                    </div>
-                    {/* <img
-                      className={styles.smartpackkernel}
-                      alt="Smartpack kernel"
-                      src="smartpackkernelmanagersvgrepocom1.svg"
-                    /> */}
-                  </div>
-                </div>
-                <div className={styles.overlapgroupwrapper}>
-                  <div className={styles.overlapgroup}>
-                    <img className={styles.line} alt="Line" src="line2.svg" />
-                    <img className={styles.line2} alt="Line" src="line3.svg" />
-                    <img className={styles.line3} alt="Line" src="line4.svg" />
-                  </div>
-                </div>
+      <div className={styles.box_cont}>
+        <div className={styles.boxes}>
+            <div className={styles.box}>
+              <Image
+                src={MLE}
+              />
+              <div className={styles.box_content}>
+                <div className={styles.box_header}>Machine learning enabled</div>
+                <p className={styles.box_desc}>
+                  We have harnessed ML, predictive analytics, generative AI to enable you transition from reactive
+                  maintenance to a proactive and datadriven approach.
+                </p>
               </div>
+          </div>
+            <div className={styles.box}>
+            <Image src={ROI} />
+            <div className={styles.box_content}>
+              <div className={styles.box_header}>Increased ROI</div>
+              <p className={styles.box_desc}>
+                Identify problematic assets sooner and make better repair versus replace decisions, all while
+                reducing operations waste.
+              </p>
             </div>
-            <img className={styles.line4} alt="Line" src="line9.svg" />
-            <img className={styles.line5} alt="Line" src="line10.svg" />
+          </div>
+            <div className={styles.box}>
+              <Image
+              src={Pricing}
+              />
+            <div className={styles.box_content}>
+              <div className={styles.box_header}>Flexible Pricing</div>
+              <p className={styles.box_desc}>
+                Scale up your as your business needs evolve. You have full entitlement to the suite with the flexibility to chose and control your license capacity
+                </p>
+              </div>
+          </div>
+          
+        
+            <div className={styles.box}>
+              <Image
+                src={SOC}
+              />
+              <div className={styles.box_content}>
+                <div className={styles.box_header}>Machine learning enabled</div>
+                <p className={styles.box_desc}>
+                  We have harnessed ML, predictive analytics, generative AI to enable you transition from reactive
+                  maintenance to a proactive and datadriven approach.
+                </p>
+              </div>
+          </div>
+            <div className={styles.box}>
+            <Image src={OptRes} />
+            <div className={styles.box_content}>
+              <div className={styles.box_header}>Increased ROI</div>
+              <p className={styles.box_desc}>
+                Identify problematic assets sooner and make better repair versus replace decisions, all while
+                reducing operations waste.
+              </p>
+            </div>
+          </div>
+            <div className={styles.box}>
+              <Image
+              src={man_asset}
+              />
+            <div className={styles.box_content}>
+              <div className={styles.box_header}>Flexible Pricing</div>
+              <p className={styles.box_desc}>
+                Scale up your as your business needs evolve. You have full entitlement to the suite with the flexibility to chose and control your license capacity
+                </p>
+              </div>
           </div>
         </div>
       </div>
